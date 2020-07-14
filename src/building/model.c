@@ -156,11 +156,21 @@ int model_load(void)
 }
 
 const model_building MODEL_ROADBLOCK = {40,0,0,0,0};
+const model_building MODEL_EMPEROR_FARM = { 40,-2,1,1,2,10 };
+const model_building MODEL_WHEAT_PLOT = { 5,0,0,0,0,0 };
 
 const model_building *model_get_building(building_type type)
 {
-    if(type == BUILDING_ROADBLOCK) {
+    switch (type) {
+    case BUILDING_ROADBLOCK:
         return &MODEL_ROADBLOCK;
+        break;
+    case BUILDING_EMPEROR_FARM:
+        return &MODEL_EMPEROR_FARM;
+        break;
+    case BUILDING_WHEAT_PLOT:
+        return &MODEL_WHEAT_PLOT;
+        break;
     }
     return &buildings[type];
 }

@@ -82,7 +82,8 @@ typedef enum {
     FIGURE_WOLF = 69,
     FIGURE_ZEBRA = 70,
     FIGURE_SPEAR = 71,
-    FIGURE_HIPPODROME_HORSES = 72
+    FIGURE_HIPPODROME_HORSES = 72,
+    FIGURE_FARMER = 73,
 } figure_type;
 
 typedef enum {

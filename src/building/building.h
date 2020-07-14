@@ -29,6 +29,7 @@ typedef struct {
         short market_goods;
         short roadblock_exceptions;
         short barracks_priority;
+        short plot_fertilized;
     } subtype;
     unsigned char road_network_id;
     unsigned short created_sequence;

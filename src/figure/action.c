@@ -10,6 +10,7 @@
 #include "figuretype/editor.h"
 #include "figuretype/enemy.h"
 #include "figuretype/entertainer.h"
+#include "figuretype/farmer.h"
 #include "figuretype/maintenance.h"
 #include "figuretype/market.h"
 #include "figuretype/migrant.h"
@@ -99,7 +100,7 @@ static void (*figure_action_callbacks[])(figure *f) = {
     figure_zebra_action, //70
     figure_spear_action,
     figure_hippodrome_horse_action,
-    figure_nobody_action,
+    figure_farmer_action,
     figure_nobody_action,
     figure_nobody_action,
     figure_nobody_action,

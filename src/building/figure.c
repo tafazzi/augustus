@@ -1,6 +1,7 @@
 #include "building/figure.h"
 
 #include "building/barracks.h"
+#include "building/farmhouse.h"
 #include "building/granary.h"
 #include "building/industry.h"
 #include "building/market.h"
@@ -1187,6 +1188,47 @@ static void spawn_figure_military_academy(building *b)
     }
 }
 
+static void spawn_figure_emperor_farm(building* b)
+{
+    check_labor_problem(b);
+    if (has_figure_of_type(b, FIGURE_FARMER)) {
+        return;
+    }
+    map_point road;
+
+    if (map_has_road_access(b->x, b->y, b->size, &road)) {
+        if (b->data.granary.resource_stored[RESOURCE_WHEAT] > 0) {
+            figure* f = figure_create(FIGURE_CART_PUSHER, road.x, road.y, DIR_4_BOTTOM);
+            b->output_resource_id = RESOURCE_WHEAT;
+            f->action_state = FIGURE_ACTION_20_CARTPUSHER_INITIAL;
+            f->resource_id = b->output_resource_id;
+            f->loads_sold_or_carrying = 1;
+            f->building_id = b->id;
+            b->figure_id = f->id;
+            f->wait_ticks = 30;
+            b->data.granary.resource_stored[RESOURCE_WHEAT] = 0;
+        }
+
+        spawn_labor_seeker(b, road.x, road.y, 50);
+        int spawn_delay = default_spawn_delay(b);
+        if (!spawn_delay) {
+            return;
+        }
+        b->figure_spawn_delay++;
+        if (b->figure_spawn_delay > 1) {
+            b->figure_spawn_delay = 0;
+            figure* f = figure_create(FIGURE_FARMER, road.x, road.y, DIR_0_TOP);
+            f->action_state = FIGURE_ACTION_203_FARMER_SPAWNED;
+            f->building_id = b->id;
+            b->figure_id = f->id;
+        }
+
+
+    }
+}
+
+
+
 static void update_native_crop_progress(building *b)
 {
     b->data.industry.progress++;
@@ -1194,6 +1236,17 @@ static void update_native_crop_progress(building *b)
         b->data.industry.progress = 0;
     }
     map_image_set(b->grid_offset, image_group(GROUP_BUILDING_FARM_CROPS) + b->data.industry.progress);
+}
+
+static void update_plot_crop_progress(building* b)
+{
+    if (b->subtype.orientation == 1) {
+        b->data.industry.progress++;
+    }
+    if (b->data.industry.progress >= FARM_MAX_TICKS) {
+        b->data.industry.progress = FARM_MAX_TICKS;
+    }
+    map_image_set(b->grid_offset, image_group(GROUP_BUILDING_FARM_CROPS) + b->data.industry.progress/(FARM_MAX_TICKS/4));
 }
 
 
@@ -1316,6 +1369,13 @@ void building_figure_generate(void)
                 case BUILDING_MILITARY_ACADEMY:
                     spawn_figure_military_academy(b);
                     break;
+                case BUILDING_EMPEROR_FARM:
+                    spawn_figure_emperor_farm(b);
+                    break;
+                case BUILDING_WHEAT_PLOT:
+                    update_plot_crop_progress(b);
+                    break;
+
             }
         }
     }

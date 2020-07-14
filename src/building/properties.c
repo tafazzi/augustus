@@ -1,4 +1,5 @@
 #include "properties.h"
+#include "core/image_group.h"
 
 static building_properties properties[140] = {
 // SZ FIRE GRP OFF
@@ -118,6 +119,8 @@ static building_properties properties[140] = {
     {2, 0, 124, 0},
     {2, 0, 125, 0},
     {0, 0,   0, 0},
+    { 2, 0, GROUP_BUILDING_FARM_HOUSE, 0 },
+    { 1, 1, GROUP_BUILDING_FARM_CROPS, 0 },
     {1, 1,   0, 0},
     {1, 1,   0, 0},
     {1, 1,   0, 0},
@@ -140,12 +143,12 @@ static building_properties properties[140] = {
     {0, 0,   0, 0},
     {0, 0,   0, 0},
     {0, 0,   0, 0},
-    {0, 0,   0, 0},
-    {0, 0,   0, 0}
+  //  {0, 0,   0, 0},
+  //  {0, 0,   0, 0}
 };
 
 
-building_properties ROADBLOCK_PROPERTIES = { 1, 1 , 10000, 0 };
+building_properties ROADBLOCK_PROPERTIES = { 1, 1 , GROUP_BUILDING_FARM_CROPS, 0 };
 
 const building_properties *building_properties_for_type(building_type type)
 {
@@ -153,6 +156,7 @@ const building_properties *building_properties_for_type(building_type type)
     if (type == 115){
         return &properties[38];
     }
+
     return &properties[type];
 }
 

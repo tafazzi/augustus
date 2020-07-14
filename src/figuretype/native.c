@@ -1,6 +1,7 @@
 #include "native.h"
 
 #include "building/building.h"
+#include "core/image_group.h"
 #include "city/figures.h"
 #include "city/military.h"
 #include "figure/combat.h"
@@ -106,3 +107,5 @@ void figure_indigenous_native_action(figure *f)
         f->image_id = 201 + dir + 8 * f->image_offset;
     }
 }
+
+

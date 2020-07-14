@@ -139,6 +139,7 @@ static int get_height_id(void)
             case BUILDING_WEAPONS_WORKSHOP:
             case BUILDING_FURNITURE_WORKSHOP:
             case BUILDING_POTTERY_WORKSHOP:
+            case BUILDING_WHEAT_PLOT:
                 return 1;
 
             case BUILDING_THEATER:
@@ -147,6 +148,7 @@ static int get_height_id(void)
             case BUILDING_SENATE:
             case BUILDING_SENATE_UPGRADED:
             case BUILDING_FOUNTAIN:
+            case BUILDING_EMPEROR_FARM:
                 return 2;
 
             case BUILDING_BARRACKS:

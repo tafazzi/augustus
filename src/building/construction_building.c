@@ -311,6 +311,12 @@ static void add_to_map(int type, building *b, int size,
         case BUILDING_PIG_FARM:
             map_building_tiles_add_farm(b->id, b->x, b->y, image_group(GROUP_BUILDING_FARM_CROPS) + 25, 0);
             break;
+        case BUILDING_EMPEROR_FARM:
+            add_building(b, image_group(GROUP_BUILDING_FARM_HOUSE));
+            break;
+        case BUILDING_WHEAT_PLOT:
+            add_building(b, image_group(GROUP_BUILDING_FARM_CROPS));
+            break;
         // industry
         case BUILDING_MARBLE_QUARRY:
             add_building(b, image_group(GROUP_BUILDING_MARBLE_QUARRY));

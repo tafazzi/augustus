@@ -5,4 +5,5 @@
 
 void figure_indigenous_native_action(figure *f);
 
+
 #endif // FIGURETYPE_NATIVE_H

@@ -236,6 +236,7 @@ set(BUILDING_FILES
     ${PROJECT_SOURCE_DIR}/src/building/count.c
     ${PROJECT_SOURCE_DIR}/src/building/destruction.c
     ${PROJECT_SOURCE_DIR}/src/building/dock.c
+    ${PROJECT_SOURCE_DIR}/src/building/farmhouse.c
     ${PROJECT_SOURCE_DIR}/src/building/figure.c
     ${PROJECT_SOURCE_DIR}/src/building/government.c
     ${PROJECT_SOURCE_DIR}/src/building/granary.c
@@ -319,6 +320,7 @@ set(FIGURETYPE_FILES
     ${PROJECT_SOURCE_DIR}/src/figuretype/editor.c
     ${PROJECT_SOURCE_DIR}/src/figuretype/enemy.c
     ${PROJECT_SOURCE_DIR}/src/figuretype/entertainer.c
+    ${PROJECT_SOURCE_DIR}/src/figuretype/farmer.c
     ${PROJECT_SOURCE_DIR}/src/figuretype/maintenance.c
     ${PROJECT_SOURCE_DIR}/src/figuretype/market.c
     ${PROJECT_SOURCE_DIR}/src/figuretype/migrant.c
