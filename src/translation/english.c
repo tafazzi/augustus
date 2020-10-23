@@ -338,8 +338,9 @@ static translation_string all_strings[] = {
     {TR_EDITOR_ALLOWED_BUILDINGS_MONUMENTS, "Monuments"},
     {TR_CITY_MESSAGE_TEXT_LIGHTHOUSE_COMPLETE, "The completed lighthouse, a mighty tower of stone, looms over the horizon. May its beacon guide ships home until the end of time." },
     {TR_CITY_MESSAGE_TEXT_PANTHEON_COMPLETE, "The Pantheon is completed. It stands unrivaled as a monument to the awesome power of the gods and people of Rome." },
-    {TR_CITY_MESSAGE_TEXT_MONUMENT_COMPLETE, "Monument completed" }
-
+    {TR_CITY_MESSAGE_TITLE_MONUMENT_COMPLETE, "Monument completed" },
+    {TR_CITY_MESSAGE_TITLE_NEPTUNE_BLESSING, "A blessing from Neptune"},
+    {TR_CITY_MESSAGE_TEXT_NEPTUNE_BLESSING, "Rewarding your city's devotion, Neptune grants smooth passage to traders for six months, during which your exports will fetch double price."}
 };
 
 void translation_english(const translation_string **strings, int *num_strings)

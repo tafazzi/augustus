@@ -239,6 +239,7 @@ int city_population_percent_in_workforce(void) {
     }
 
     if (config_get(CONFIG_GP_CH_FIXED_WORKERS)) {
+        //mod for venus blessing
         return 38;
     }
     return calc_percentage(city_data.labor.workers_available, city_data.population.population);
@@ -310,6 +311,26 @@ static void yearly_advance_ages_and_calculate_deaths(void)
 
         city_data.population.yearly_deaths += removed;
         aged100 = 0;
+    }
+}
+
+void city_population_venus_blessing(void)
+{
+    int retirement_age = (CONFIG_GP_CH_RETIRE_AT_60) ? 60 : 50;
+    int total_before = 0;
+    int total_after = 0;
+    for (int age = 0; age < 94; age++) {
+        total_before += city_data.population.at_age[age];
+    }
+    for (int age = 25; age < 30; age++) {
+        city_data.population.at_age[age] += city_data.population.at_age[age + 5];
+
+    }
+    for (int age = 30; age < 94; age++) {
+        city_data.population.at_age[age] = city_data.population.at_age[age + 5];
+    }
+    for (int age = 0; age < 94; age++) {
+        total_after += city_data.population.at_age[age];
     }
 }
 
