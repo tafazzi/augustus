@@ -48,13 +48,13 @@ static translation_string all_strings[] = {
     {TR_CONFIG_FIX_IMMIGRATION_BUG, "Correggi il bug dell'immigrazione al livello molto difficile"},
     {TR_CONFIG_FIX_100_YEAR_GHOSTS, "Corregge il bug dei centenari"},
     {TR_CONFIG_FIX_EDITOR_EVENTS, "Elimina le complicazioni al cambio di Imperatore"},
-    {TR_CONFIG_DRAW_WALKER_WAYPOINTS, "Draw walker waypoints on overlay after right clicking on a building"},
+    {TR_CONFIG_DRAW_WALKER_WAYPOINTS, "Visualizza il percorso del camminatore cliccando con il tasto destro del mouse su un edificio"},
     {TR_CONFIG_ENABLE_ZOOM, "Abilità lo zoom (può causare rallentamenti, utilizza più RAM)"},
     {TR_CONFIG_COMPLETE_RATING_COLUMNS, "Fissa colonne di valutazione non completate su obiettivi bassi"},
     {TR_CONFIG_GRANDFESTIVAL, "Le grandi feste permettono una benedizione extra da parte di una divinità"},
     {TR_CONFIG_JEALOUS_GODS, "Disabilita gelosia delle divinità"},
     {TR_CONFIG_GLOBAL_LABOUR, "Abilita mercato del lavoro globale"},
-    {TR_CONFIG_SCHOOL_WALKERS, "Extend school walkers range"},
+    {TR_CONFIG_SCHOOL_WALKERS, "Aumenta la distanza massima percorribile dagli scolari"},
     {TR_CONFIG_RETIRE_AT_60, "Cambia l'età della pensione da 50 a 60 anni"},
     {TR_CONFIG_FIXED_WORKERS, "Mercato del lavoro fisso - 38% della popolazione plebea"},
     {TR_CONFIG_EXTRA_FORTS, "Consenti l'edificazione di 4 forti supplementari"},
@@ -63,11 +63,11 @@ static translation_string all_strings[] = {
     {TR_CONFIG_MORE_STOCKPILE, "Le case accumulano più merci dal mercato"},
     {TR_CONFIG_NO_BUYER_DISTRIBUTION, "Le signore del mercato non distribuiscono merci"},
     {TR_CONFIG_IMMEDIATELY_DELETE_BUILDINGS, "Rimuovi edifici immediatamente"},
-    {TR_CONFIG_GETTING_GRANARIES_GO_OFFROAD, "Cart pushers from getting granaries can go offroad"},
-    {TR_CONFIG_GRANARIES_GET_DOUBLE, "Double the capacity of cart pushers from getting granaries"},
+    {TR_CONFIG_GETTING_GRANARIES_GO_OFFROAD, "I carrelli da e verso i granai possono uscire dalle strade"},
+    {TR_CONFIG_GRANARIES_GET_DOUBLE, "Raddoppia la capacità dei carrelli da e verso i granai"},
     {TR_CONFIG_TOWER_SENTRIES_GO_OFFROAD, "Le sentinelle della torre non hanno bisogno di un accesso stradale dalle caserme"},
     {TR_CONFIG_FARMS_DELIVER_CLOSE, "Le fattorie e i moli consegnano solo ai granai vicini"},
-    {TR_CONFIG_DELIVER_ONLY_TO_ACCEPTING_GRANARIES, "Food isn't delivered to getting granaries"},
+    {TR_CONFIG_DELIVER_ONLY_TO_ACCEPTING_GRANARIES, "Il cibo non viene consegnato da/verso i granai."},
     {TR_CONFIG_ALL_HOUSES_MERGE, "Tutte le case si uniscono"},
     {TR_CONFIG_WINE_COUNTS_IF_OPEN_TRADE_ROUTE, "Le vie commerciali aperte contano come fornitura di diversi tipi di vino"},
     {TR_CONFIG_RANDOM_COLLAPSES_TAKE_MONEY, "I crolli improvvisi delle miniere costano soldi"},
@@ -188,21 +188,21 @@ static translation_string all_strings[] = {
     {TR_HEADER_HOUSING, "Alloggi"},
     {TR_ADVISOR_HOUSING_ROOM, "Gli alloggi della città hanno posti disponibili"},
     {TR_ADVISOR_HOUSING_NO_ROOM, "La città non ha alloggi disponibili."},
-    {TR_ADVISOR_RESIDENCES_DEMANDING_POTTERY, "Residences demanding pottery"}, I residenti chiedono vettovaglie
-    {TR_ADVISOR_RESIDENCES_DEMANDING_FURNITURE, "Residences demanding furniture"}, I residenti chiedono mobili/mobilio
-    {TR_ADVISOR_RESIDENCES_DEMANDING_OIL, "Residences demanding oil"}, I residenti chiedono olio
-    {TR_ADVISOR_RESIDENCES_DEMANDING_WINE, "Residences demanding wine"}, I residenti chiedono vino
-    {TR_ADVISOR_TOTAL_NUM_HOUSES, "Total residences:"}, Totale residenti 
-    {TR_ADVISOR_AVAILABLE_HOUSING_CAPACITY, "Available capacity:"}, Capacità rimanente
-    {TR_ADVISOR_TOTAL_HOUSING_CAPACITY, "Total capacity:"}, Capacità complessiva
+    {TR_ADVISOR_RESIDENCES_DEMANDING_POTTERY, "I residenti chiedono vettovaglie"}, 
+    {TR_ADVISOR_RESIDENCES_DEMANDING_FURNITURE, "I residenti chiedono mobili"}, 
+    {TR_ADVISOR_RESIDENCES_DEMANDING_OIL, "I residenti chiedono olio"},
+    {TR_ADVISOR_RESIDENCES_DEMANDING_WINE, "I residenti chiedono vino"}, 
+    {TR_ADVISOR_TOTAL_NUM_HOUSES, "Totale residenti:"},  
+    {TR_ADVISOR_AVAILABLE_HOUSING_CAPACITY, "Capacità rimanente:"}, 
+    {TR_ADVISOR_TOTAL_HOUSING_CAPACITY, "Capacità complessiva:"}, 
     {TR_ADVISOR_ADVISOR_HEADER_HOUSING, "Popolazione - alloggi"},
-    {TR_ADVISOR_BUTTON_GRAPHS, "Graphs"}, Grafici
-    {TR_ADVISOR_HOUSING_PROSPERITY_RATING, "Housing prosperity rating is"}, Il rating di prosperità di questa abitazione è: 
-    {TR_ADVISOR_PERCENTAGE_IN_VILLAS_PALACES, "Percentage of your population in villas and palaces is"}, La percentuale di popolazione in ville e palazzi è:
-    {TR_ADVISOR_PERCENTAGE_IN_TENTS_SHACKS, "Percentage of your population in tents and shacks is"}, La percentuale di popolazione in tende e baracche è:
+    {TR_ADVISOR_BUTTON_GRAPHS, "Grafici"},
+    {TR_ADVISOR_HOUSING_PROSPERITY_RATING, " Il rating di prosperità di questa abitazione è:"},
+    {TR_ADVISOR_PERCENTAGE_IN_VILLAS_PALACES, "La percentuale di popolazione in ville e palazzi è:"}, 
+    {TR_ADVISOR_PERCENTAGE_IN_TENTS_SHACKS, "La percentuale di popolazione in tende e baracche è:"}, 
     {TR_ADVISOR_AVERAGE_TAX, "Average tax income per residence is"}, Introito medio per residente: 
     {TR_ADVISOR_AVERAGE_AGE, "Average age of your population is"}, Età media della popolazione:
-    {TR_ADVISOR_PERCENT_IN_WORKFORCE, "Percentage of your population in the workforce is"}, Percentuale della popolazione come forza lavoro:
+    {TR_ADVISOR_PERCENT_IN_WORKFORCE, "Percentuale della popolazione come forza lavoro:"}, 
     {TR_ADVISOR_BIRTHS_LAST_YEAR, "Births last year:"}, Nascite nell'ultimo anno:
     {TR_ADVISOR_DEATHS_LAST_YEAR, "Deaths last year:"}, Morti nell'ultimo anno:
     {TR_ADVISOR_TOTAL_POPULATION, "residents total"}, Residenti totali
@@ -222,11 +222,11 @@ static translation_string all_strings[] = {
     {TR_BUILDING_GRAND_TEMPLE_PHASE_3, "(Cella)"},
     {TR_BUILDING_GRAND_TEMPLE_PHASE_4, "(Praecinctum)"},
     {TR_BUILDING_GRAND_TEMPLE_PHASE_5, "(Dedicatio)"},
-    {TR_BUILDING_GRAND_TEMPLE_PHASE_1_TEXT, "Laborers are constructing the podium that will elevate the temple and provide a solid foundation to weather the passage of time." },
-    {TR_BUILDING_GRAND_TEMPLE_PHASE_2_TEXT, "Artisans are crafting the portico, which bears the temple's sacrificial altar." },
-    {TR_BUILDING_GRAND_TEMPLE_PHASE_3_TEXT, "Engineers are crafting the cella, the temple interior that houses the sacred images." },
-    {TR_BUILDING_GRAND_TEMPLE_PHASE_4_TEXT, "Work on the temple praecinctum has begun, where worshippers will gather outdoors for public ceremonies." },
-    {TR_BUILDING_GRAND_TEMPLE_PHASE_5_TEXT, "With the temple nearly complete, priests gather to perform the rites of consecration." },
+    {TR_BUILDING_GRAND_TEMPLE_PHASE_1_TEXT, "I lavoratori stanno costruendo il podio che innalzerà il tempio e fornirà una solida base per resistere al passare del tempo." },
+    {TR_BUILDING_GRAND_TEMPLE_PHASE_2_TEXT, "Gli artigiani stanno realizzando il portico, che ospita l'altare sacrificale del tempio." },
+    {TR_BUILDING_GRAND_TEMPLE_PHASE_3_TEXT, "Gli ingegneri stanno realizzando la cella, l'interno del tempio che ospita le immagini sacre." },
+    {TR_BUILDING_GRAND_TEMPLE_PHASE_4_TEXT, "Sono iniziati i lavori per il praecinctum del tempio, dove i fedeli si riuniranno all'aperto per le cerimonie pubbliche." },
+    {TR_BUILDING_GRAND_TEMPLE_PHASE_5_TEXT, "Con il tempio quasi completo, i sacerdoti si riuniscono per eseguire i riti di consacrazione." },
     {TR_BUILDING_MENU_TREES, "Alberi" },
     {TR_BUILDING_MENU_PATHS, "Sentieri" },
     {TR_BUILDING_MENU_PARKS, "Parchi"},
@@ -301,15 +301,15 @@ static translation_string all_strings[] = {
     {TR_FIGURE_TYPE_WORK_CAMP_ENGINEER, "Ingeniere"}, 
     {TR_FIGURE_TYPE_MESS_HALL_BUYER, "Borgomastro"}, 
     {TR_FIGURE_TYPE_MESS_HALL_COLLECTOR, "Operaio"}, 
-    {TR_BUILDING_CERES_TEMPLE_MODULE_DESC, "The grand temple organizes priests of Ceres to aid in distributing food and oil to your hungry citizens."},
-    {TR_BUILDING_VENUS_TEMPLE_MODULE_DESC, "The grand temple allows priests of Venus to supply sacred wine to your citizens." },
-    {TR_BUILDING_MARS_TEMPLE_MODULE_DESC, "The grand temple organizes priests of Mars to supply food to your supply post."},
+    {TR_BUILDING_CERES_TEMPLE_MODULE_DESC, "Il grande tempio organizza i sacerdoti di Cerere per aiutare a distribuire cibo e olio ai cittadini affamati."},
+    {TR_BUILDING_VENUS_TEMPLE_MODULE_DESC, "Il grande tempio permette ai sacerdoti di Venere di fornire vino sacro ai tuoi cittadini." },
+    {TR_BUILDING_MARS_TEMPLE_MODULE_DESC, "Il grande tempio organizza i sacerdoti di Marte per fornire cibo alla tua stazione di rifornimento."},
     {TR_BUILDING_SMALL_TEMPLE_CERES_NAME, "Tempio di Cerere"},
     {TR_BUILDING_SMALL_TEMPLE_NEPTUNE_NAME, "Tempio di Nettuno"},
     {TR_BUILDING_SMALL_TEMPLE_MERCURY_NAME, "Tempio di Mercurio"},
     {TR_BUILDING_SMALL_TEMPLE_MARS_NAME, "Tempio di Marte"},
     {TR_BUILDING_SMALL_TEMPLE_VENUS_NAME, "Tempio di Venere"},
-    {TR_FIGURE_TYPE_PRIEST_BUYER, "Priest" },
+    {TR_FIGURE_TYPE_PRIEST_BUYER, "Sacerdote" },
     // Transcription of mission_exact4.wav
     {TR_PHRASE_FIGURE_MISSIONARY_EXACT_4, "\"I'll do what I can to calm these barbarians down. I'm sure they'll stop attacking the city when I've had a word with them.\"" },
     {TR_CITY_MESSAGE_TITLE_PANTHEON_FESTIVAL, "An annual festival"},
@@ -325,11 +325,11 @@ static translation_string all_strings[] = {
     {TR_TOOLTIP_BUTTON_ACCEPT_TRADE_CARAVAN, "Allow caravans to trade here"}, Consenti alle carovane di comprare
     {TR_TOOLTIP_BUTTON_ACCEPT_TRADE_SHIPS, "Allow trade ships to trade here"}, Consenti alle navi commerciali di comprare
     {TR_CONFIG_HEADER_CITY_MANAGEMENT_CHANGES, "Gestione della città"},
-    {TR_BUILDING_LIGHTHOUSE, "Lighthouse"},
-    {TR_BUILDING_LIGHTHOUSE_PHASE_1, "(Foundation)" },
-    {TR_BUILDING_LIGHTHOUSE_PHASE_2, "(Pedestal)" },
-    {TR_BUILDING_LIGHTHOUSE_PHASE_3, "(Tower)" },
-    {TR_BUILDING_LIGHTHOUSE_PHASE_4, "(Crown)" },
+    {TR_BUILDING_LIGHTHOUSE, "Faro"},
+    {TR_BUILDING_LIGHTHOUSE_PHASE_1, "(Fondamenta)" },
+    {TR_BUILDING_LIGHTHOUSE_PHASE_2, "(Piedistallo)" },
+    {TR_BUILDING_LIGHTHOUSE_PHASE_3, "(Torre)" },
+    {TR_BUILDING_LIGHTHOUSE_PHASE_4, "(Corona)" },
     {TR_BUILDING_LIGHTHOUSE_PHASE_1_TEXT, "Gli ingegneri stanno gettando una solida base per sostenere il peso di una grande torre di pietra." },
     {TR_BUILDING_LIGHTHOUSE_PHASE_2_TEXT, "I muratori stanno costruendo il piedistallo che innalzerà la fiamma del faro molto al di sopra dell'orizzonte." },
     {TR_BUILDING_LIGHTHOUSE_PHASE_3_TEXT, "La torre del faro si erge ancora più in alto ogni giorno, mentre i muratori praticano con cura il loro mestiere." },
@@ -345,20 +345,20 @@ static translation_string all_strings[] = {
     {TR_CITY_MESSAGE_TITLE_VENUS_BLESSING, "Una benedizione da Venere" },
     {TR_CITY_MESSAGE_TEXT_VENUS_BLESSING, "Deliziata dalla gioiosa riverenza che le viene mostrata, Venere concede giovinezza, salute e felicità al vostro popolo, aumentando la dimensione della vostra popolazione attiva." },
     {TR_BUILDING_MENU_STATUES, "Statue" },
-    {TR_BUILDING_MENU_GOV_RES, "Governor's mansions" },
+    {TR_BUILDING_MENU_GOV_RES, "Residenze del governatore" },
     {TR_OVERLAY_ROADS, "Strade" },
     {TR_NO_MODS_TITLE, "La cartella mods non è stata trovata" },
     {TR_NO_MODS_MESSAGE,
         "La tua installazione di Caesar 3 non ha la cartella mods installata correttamente. "
         "I nuovi assett non saranno mostrati correttamente.\n"
         "Assicurati che la cartella '/mods' esiste nella cartella principale della tua installazione di Caesar 3. " },
-    {TR_WARNING_WATER_NEEDED_FOR_LIGHTHOUSE, "Lighthouse must be placed near water"},
+    {TR_WARNING_WATER_NEEDED_FOR_LIGHTHOUSE, "Il faro deve essere posizionato vicino all'acqua"},
     {TR_TOOLTIP_OVERLAY_PANTHEON_ACCESS, "Questa casa ha accesso a tutti i cinque dei del Pantheon"},
     {TR_BUILDING_LEGION_FOOD_BONUS, "L'abbondanza di cibo aumenta il morale" },
     {TR_BUILDING_LEGION_FOOD_STATUS, "Stato del cibo"},
     {TR_TOOLTIP_BUTTON_ACCEPT_QUARTERMASTER, "Permetti al capomastro di prelevare cibo da qui"},
     {TR_WARNING_RESOURCES_NOT_AVAILABLE, "Non puoi ottenere i materiali necessari"},
-    {TR_CONFIG_GP_CH_MONUMENTS_BOOST_CULTURE_RATING, "Completed grand temples grant +8 culture rating"},
+    {TR_CONFIG_GP_CH_MONUMENTS_BOOST_CULTURE_RATING, "I grandi templi completati concedono 8 punti alla valutazione della cultura."},
     {TR_BUTTON_BACK_TO_MAIN_MENU, "Torna al menu principale" },
     {TR_LABEL_PAUSE_MENU, "Pausa" },
     {TR_OVERLAY_LEVY, "Arruolamenti" },
