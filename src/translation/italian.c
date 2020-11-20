@@ -170,16 +170,16 @@ static translation_string all_strings[] = {
     {TR_BUILDING_GRAND_TEMPLE_VENUS_MODULE_2_DESC, "I sacerdoti offrono intrattenimento e abbelliscono le case, aumentando l'attrattività delle abitiazioni senza bisogno di ulteriori decorazioni." },
     {TR_BUILDING_PANTHEON_MODULE_1_DESC, "Tutti i templi mandano dei sacerdoti al Patheon, diffondendo la fede nelle proprie divinità ed elargendo benedizioni." },
     {TR_BUILDING_PANTHEON_MODULE_2_DESC, "Le case con accesso al Patheon possono migliorare di un livello aggiuntivo." }, 
-    {TR_BUILDING_GRAND_TEMPLE_CERES_DESC_MODULE_1, "Tempio di Cerere Promotrice" },
-    {TR_BUILDING_GRAND_TEMPLE_CERES_DESC_MODULE_2, "Tempio di Cerere Preparatrice" },
-    {TR_BUILDING_GRAND_TEMPLE_NEPTUNE_DESC_MODULE_1, "Tempio di Nettuno Equestre" },
+    {TR_BUILDING_GRAND_TEMPLE_CERES_DESC_MODULE_1, "Tempio di Cerere Promitor" },
+    {TR_BUILDING_GRAND_TEMPLE_CERES_DESC_MODULE_2, "Tempio di Cerere Reparator" },
+    {TR_BUILDING_GRAND_TEMPLE_NEPTUNE_DESC_MODULE_1, "Tempio di Nettuno Equester" },
     {TR_BUILDING_GRAND_TEMPLE_NEPTUNE_DESC_MODULE_2, "Tempio di Nettuno Adiutor" },
     {TR_BUILDING_GRAND_TEMPLE_MERCURY_DESC_MODULE_1, "Tempio di Mercurio Fortunus" },   
     {TR_BUILDING_GRAND_TEMPLE_MERCURY_DESC_MODULE_2, "Tempio dell'Abbondanza di Mercurio" },
-    {TR_BUILDING_GRAND_TEMPLE_MARS_DESC_MODULE_1, "Tempio di Marte Ultore" }, 
-    {TR_BUILDING_GRAND_TEMPLE_MARS_DESC_MODULE_2, "Tempio di Marte Quirino" }, 
+    {TR_BUILDING_GRAND_TEMPLE_MARS_DESC_MODULE_1, "Tempio di Marte Ultor" }, 
+    {TR_BUILDING_GRAND_TEMPLE_MARS_DESC_MODULE_2, "Tempio di Marte Quirinus" }, 
     {TR_BUILDING_GRAND_TEMPLE_VENUS_DESC_MODULE_1, "Tempio di Venere Verticordia" },
-    {TR_BUILDING_GRAND_TEMPLE_VENUS_DESC_MODULE_2, "Tempio di Venere Genetrice" }, 
+    {TR_BUILDING_GRAND_TEMPLE_VENUS_DESC_MODULE_2, "Tempio di Venere Genetrix" }, 
     {TR_BUILDING_PANTHEON_DESC_MODULE_1, "Pantheon Ara Maxima" }, 
     {TR_BUILDING_PANTHEON_DESC_MODULE_2, "Pantheon Roma Aeterna" }, 
     {TR_BUILDING_GRAND_TEMPLE_MENU, "Tempio Grande" }, 
@@ -188,10 +188,10 @@ static translation_string all_strings[] = {
     {TR_HEADER_HOUSING, "Alloggi"},
     {TR_ADVISOR_HOUSING_ROOM, "Gli alloggi della città hanno posti disponibili"},
     {TR_ADVISOR_HOUSING_NO_ROOM, "La città non ha alloggi disponibili."},
-    {TR_ADVISOR_RESIDENCES_DEMANDING_POTTERY, "I residenti chiedono vettovaglie"}, 
-    {TR_ADVISOR_RESIDENCES_DEMANDING_FURNITURE, "I residenti chiedono mobili"}, 
-    {TR_ADVISOR_RESIDENCES_DEMANDING_OIL, "I residenti chiedono olio"},
-    {TR_ADVISOR_RESIDENCES_DEMANDING_WINE, "I residenti chiedono vino"}, 
+    {TR_ADVISOR_RESIDENCES_DEMANDING_POTTERY, "I residenti richiedono vettovaglie"}, 
+    {TR_ADVISOR_RESIDENCES_DEMANDING_FURNITURE, "I residenti richiedono mobili"}, 
+    {TR_ADVISOR_RESIDENCES_DEMANDING_OIL, "I residenti richiedono olio"},
+    {TR_ADVISOR_RESIDENCES_DEMANDING_WINE, "I residenti richiedono vino"}, 
     {TR_ADVISOR_TOTAL_NUM_HOUSES, "Totale residenti:"},  
     {TR_ADVISOR_AVAILABLE_HOUSING_CAPACITY, "Capacità rimanente:"}, 
     {TR_ADVISOR_TOTAL_HOUSING_CAPACITY, "Capacità complessiva:"}, 
@@ -200,23 +200,30 @@ static translation_string all_strings[] = {
     {TR_ADVISOR_HOUSING_PROSPERITY_RATING, " Il rating di prosperità di questa abitazione è:"},
     {TR_ADVISOR_PERCENTAGE_IN_VILLAS_PALACES, "La percentuale di popolazione in ville e palazzi è:"}, 
     {TR_ADVISOR_PERCENTAGE_IN_TENTS_SHACKS, "La percentuale di popolazione in tende e baracche è:"}, 
-    {TR_ADVISOR_AVERAGE_TAX, "Average tax income per residence is"}, Introito medio per residente: 
-    {TR_ADVISOR_AVERAGE_AGE, "Average age of your population is"}, Età media della popolazione:
+    {TR_ADVISOR_AVERAGE_TAX, "Introito medio per residente:"},  
+    {TR_ADVISOR_AVERAGE_AGE, "Età media della popolazione:"}, 
     {TR_ADVISOR_PERCENT_IN_WORKFORCE, "Percentuale della popolazione come forza lavoro:"}, 
-    {TR_ADVISOR_BIRTHS_LAST_YEAR, "Births last year:"}, Nascite nell'ultimo anno:
-    {TR_ADVISOR_DEATHS_LAST_YEAR, "Deaths last year:"}, Morti nell'ultimo anno:
-    {TR_ADVISOR_TOTAL_POPULATION, "residents total"}, Residenti totali
+    {TR_ADVISOR_BIRTHS_LAST_YEAR, "Nascite nell'ultimo anno:"}, 
+    {TR_ADVISOR_DEATHS_LAST_YEAR, "Morti nell'ultimo anno:"}, 
+    {TR_ADVISOR_TOTAL_POPULATION, "residenti totali"}, 
     {TR_REQUIRED_RESOURCES, "Risorse consegnate per la fase attuale:"},
     {TR_BUILDING_GRAND_TEMPLE_CONSTRUCTION_DESC, "La costruzione di grandi templi richiede materiale conservato in un magazzino, operai da un campo di lavoro e ingegneri da una gilda di ingegneri."},
     {TR_CONSTRUCTION_PHASE, "Fase della costruzione:"},
     {TR_ADD_MODULE, "Riconsacrare il tempio?"},
     {TR_BUILDING_TEMPLE_MODULE_CONSTRUCTED, "Epiteto conferito."},
-    {TR_BUILDING_CERES_TEMPLE_QUOTE, "First Ceres taught the laboring hind to plow\nThe pregnant Earth, and quickening seed to sow.\nShe first for Man did wholesome food provide\nAnd with just laws the wicked world supplied.\n-Ovid, the Metamorphoses, Book V" },
-    { TR_BUILDING_NEPTUNE_TEMPLE_QUOTE, "The billows fall, while Neptune lays his mace\nOn the rough sea,and smooths its furrowed face.\nAlready Triton, at his call, appears Above the waves;\na Tyrian robe he wears;\nAnd in his hand a crooked trumpet bears.\n-Ovid, the Metamorphoses, Book I"},
-    {TR_BUILDING_MERCURY_TEMPLE_QUOTE, "Cattle and fat sheep can all be had for the raiding,\ntripods for the trading, and tawny headed stallions.\nBut a mans's lifebreath cannot come back again-\nno raiders in force, no trading brings it back, \nonce it slips through a man's clenched teeth.\n-Homer, The Iliad, Book IX"},
-    {TR_BUILDING_MARS_TEMPLE_QUOTE, "For Mars, repair his broken axletrees and blunted war,\nAnd send him forth again with furbished arms,\nTo wake the lazy war with trumpets' loud alarms.\n-Virgil, the Aeneid, Book VIII" },
-    {TR_BUILDING_VENUS_TEMPLE_QUOTE, "By winged Cupid, and Venus, his tender mother,\nhow great the joy I had!\nHow clearly passion touched me!\nHow my whole heart melted where I lay!\n-Ovid, the Metamorphoses, Book IX" },
-    {TR_BUILDING_PANTHEON_QUOTE, "The gates of heaven unfold: Jupiter summons all\nThe gods to council in the common hall.\nSublimely seated, he surveys from far\nThe fields, the camp, the fortune of the war,\nAnd all the inferior world. From first to last,\nThe sovereign senate in degrees are placed.\n-Virgil, The Aeneid, Book X" },
+    
+    {TR_BUILDING_CERES_TEMPLE_QUOTE, "Per prima Cerere smosse col vomere dell'aratro le zolle,\nper prima diede in coltura alla terra messi e frutti,\nper prima diede leggi: a Cerere dobbiamo tutto.\n-Ovid, the Metamorphoses, Book V" },
+    
+    { TR_BUILDING_NEPTUNE_TEMPLE_QUOTE, "Cessò la furia del mare e, deposto il suo tridente,\nil dio degli oceani rabbonì le acque, chiamò l'azzurro Tritone\nche sporge fuori dai gorghi con le spalle incrostate di conchiglie\ne gli ordinò di soffiare nel suo corno sonoro\nperché a quel segnale rientrassero flutti e fiumi\n-Ovidio, Metamorfosi, Libro I"},
+    
+    {TR_BUILDING_MERCURY_TEMPLE_QUOTE, "Poiché predare bovi si possono, e floride greggi,\ntripodi puoi conquistare, cavalli di bionda cervice;\nma che ritorni d’un uomo lo spirito, quando la cerchia\nlasciò dei denti, cosa non è che si predi o s’acquisti.\n-Omero, L'Iliade, Libro IX"},
+    
+    {TR_BUILDING_MARS_TEMPLE_QUOTE, "Fe' Turno inalberar di guerra il segno,\ne che guerra sonâr le roche trombe,\nspinti i carri e i destrieri, e l'armi scosse di Marte al tempio.\n-Virgilio, Eneide, Libro VIII" },
+    
+    {TR_BUILDING_VENUS_TEMPLE_QUOTE, "O Venere, o Cupido, che voli intorno alla tua tenera madre,\nche godimento ho provato, che voluttà autentica m'ha pervaso,\nabbandonata al languore, sfibrata sino all'anima.\n-Ovidio, Metamorfosi, Libro IX" },
+    
+    {TR_BUILDING_PANTHEON_QUOTE, "Si apre intanto la casa dell´onnipotente Olimpo\ned il padre e re degli dei e degli uomini convoca il concilio.\nnella sede siderea, da cui alto contempla tutte le terre\ngli accampamenti dei Dardanidi ed i popoli latini.\n-Virgilio, Eneide, Libro X" },
+    
     {TR_BUILDING_GRAND_TEMPLE_PHASE_1, "(Podium)"},
     {TR_BUILDING_GRAND_TEMPLE_PHASE_2, "(Portico)"},
     {TR_BUILDING_GRAND_TEMPLE_PHASE_3, "(Cella)"},
@@ -294,7 +301,7 @@ static translation_string all_strings[] = {
     {TR_WARNING_MAX_GRAND_TEMPLES, "Solo due Templi Grandi possono essere costruiti." },
     {TR_CITY_MESSAGE_TITLE_GRAND_TEMPLE_COMPLETE, "Tempio Grande completato"},
     {TR_CITY_MESSAGE_TEXT_GRAND_TEMPLE_COMPLETE, "I sacerdoti e i fedeli accorrono al nuovo grande tempio per i riti di consacrazione. Il tuo popolo è in visibilio per la maestosità delle tue opere, e la divinità da te scelta ti offre il suo favore."},
-    {TR_CITY_MESSAGE_TITLE_MERCURY_BLESSING, "A blessing from Mercury" }, Una benedizione da Mercurio
+    {TR_CITY_MESSAGE_TITLE_MERCURY_BLESSING, "Una benedizione da Mercurio" }, 
     {TR_CITY_MESSAGE_TEXT_MERCURY_BLESSING, "Deliziato dalla tua devozione, Mercurio ha benedetto la tua industria, fornendo materiali grezzi per i tuoi artigiani."},
     {TR_FIGURE_TYPE_WORK_CAMP_WORKER, "Capomastro"},
     {TR_FIGURE_TYPE_WORK_CAMP_SLAVE, "Trasportatore"},
@@ -321,9 +328,9 @@ static translation_string all_strings[] = {
     {TR_TOOLTIP_BUTTON_DELETE_READ_MESSAGES, "Cancella messaggi già letti"},
     {TR_TOOLTIP_BUTTON_MOTHBALL_ON, "Disattiva questo edificio"}, 
     {TR_TOOLTIP_BUTTON_MOTHBALL_OFF, "Attiva questo edificio"}, 
-    {TR_TOOLTIP_BUTTON_ACCEPT_MARKET_LADIES, "Allow market ladies to buy from here"}, Consenti alle donne del mercato di comprare
-    {TR_TOOLTIP_BUTTON_ACCEPT_TRADE_CARAVAN, "Allow caravans to trade here"}, Consenti alle carovane di comprare
-    {TR_TOOLTIP_BUTTON_ACCEPT_TRADE_SHIPS, "Allow trade ships to trade here"}, Consenti alle navi commerciali di comprare
+    {TR_TOOLTIP_BUTTON_ACCEPT_MARKET_LADIES, "Consenti alle donne del mercato di commerciare"}, 
+    {TR_TOOLTIP_BUTTON_ACCEPT_TRADE_CARAVAN, "Consenti alle carovane di commerciare"}, 
+    {TR_TOOLTIP_BUTTON_ACCEPT_TRADE_SHIPS, "Consenti alle navi commerciali di commerciare"}, 
     {TR_CONFIG_HEADER_CITY_MANAGEMENT_CHANGES, "Gestione della città"},
     {TR_BUILDING_LIGHTHOUSE, "Faro"},
     {TR_BUILDING_LIGHTHOUSE_PHASE_1, "(Fondamenta)" },
@@ -353,7 +360,7 @@ static translation_string all_strings[] = {
         "I nuovi assett non saranno mostrati correttamente.\n"
         "Assicurati che la cartella '/mods' esiste nella cartella principale della tua installazione di Caesar 3. " },
     {TR_WARNING_WATER_NEEDED_FOR_LIGHTHOUSE, "Il faro deve essere posizionato vicino all'acqua"},
-    {TR_TOOLTIP_OVERLAY_PANTHEON_ACCESS, "Questa casa ha accesso a tutti i cinque dei del Pantheon"},
+    {TR_TOOLTIP_OVERLAY_PANTHEON_ACCESS, "Questa casa ha accesso a tutti i cinque dei del Pantheon"},
     {TR_BUILDING_LEGION_FOOD_BONUS, "L'abbondanza di cibo aumenta il morale" },
     {TR_BUILDING_LEGION_FOOD_STATUS, "Stato del cibo"},
     {TR_TOOLTIP_BUTTON_ACCEPT_QUARTERMASTER, "Permetti al capomastro di prelevare cibo da qui"},
